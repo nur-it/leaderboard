@@ -23,6 +23,9 @@ export default {
           active: "#1B162D",
           para: "#433D57",
           bg: "#1C1526",
+          "card-bg": "#181429",
+          "timer-bg": "#1C1730",
+          "timer-text": "#69698D",
         },
         sky: {
           10: "#08A0E9",
@@ -33,6 +36,9 @@ export default {
           10: "#00E701",
           text: "#11A912",
           btnBg: " rgba(0, 231, 1, 0.5)",
+        },
+        light: {
+          text: "#CDCCD7",
         },
       },
     },
