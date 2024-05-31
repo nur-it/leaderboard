@@ -2,9 +2,11 @@ import { useState } from "react";
 import LeaderBoardTopPart from "./LeaderBoardTopPart";
 import Card from "./Card";
 import LeaderBoardTimer from "./Timer";
+
 import avatar_1 from "../../../assets/images/avatar_1.png";
 import avatar_2 from "../../../assets/images/avatar_2.png";
 import avatar_3 from "../../../assets/images/avatar_3.png";
+import Table from "./Table";
 const Leaderboard = () => {
   const [selectedTab, setSelectedTab] = useState(1);
   return (
@@ -22,6 +24,7 @@ const Leaderboard = () => {
           </div>
           <Card avatar={selectedTab === 1 ? avatar_3 : avatar_1} />
         </div>
+        <Table />
       </div>
     </section>
   );
