@@ -22,7 +22,7 @@ const Leaderboard = () => {
             <Card avatar={selectedTab === 1 ? avatar_2 : avatar_3} />
             <LeaderBoardTimer />
           </div>
-          <Card avatar={selectedTab === 1 ? avatar_3 : avatar_1} />
+          <Card avatar={selectedTab === 1 ? avatar_3 : avatar_1} crownWhite />
         </div>
         <Table />
       </div>

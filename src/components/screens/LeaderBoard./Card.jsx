@@ -2,12 +2,12 @@ import badge from "../../../assets/images/badge.png";
 import point from "../../../assets/images/point.png";
 import crown from "../../../assets/images/crown.png";
 import crown_white from "../../../assets/images/crown_white.png";
-const Card = ({ avatar }) => {
+const Card = ({ avatar, crownWhite }) => {
   return (
     <div className="bg-primary-card-bg rounded-2xl max-w-[360px] text-center pt-[34px] relative">
       <div>
         <img
-          src={crown}
+          src={crownWhite ? crown_white : crown}
           alt="crown"
           className="w-12 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2/3"
         />
