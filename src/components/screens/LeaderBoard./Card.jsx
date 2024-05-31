@@ -12,20 +12,36 @@ const Card = ({ avatar, rank, points }) => {
           className="w-12 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2/3"
         />
       </div>
-      <div className="w-20 h-20 mx-auto rounded-2xl bg-[linear-gradient(180deg,_#F59F70_0%,_#D27047_100%)] p-[3px] relative">
-        <figure className="h-full w-full rounded-2xl border-[3px] border-primary-card-bg ">
+      {/* <div className="w-20 h-20 mx-auto rounded-2xl bg-[linear-gradient(180deg,_#F59F70_0%,_#D27047_100%)] p-[3px] relative">
+        <figure className="h-full w-full rounded-2xl border-[3px] border-primary-card-bg bg-primary-card-bg ">
           <img
             src={avatar}
             alt="csGoOne"
-            className="rounded-2xl relative after:content-[''] after:w-8 after:h-8 after:absolute after:top-0 after:rounded-2xl after:border after:border-red-500 after:bg-green-700 after:z-10"
+            className="rounded-2xl h-full w-full object-cover "
           />
-          <div className=" absolute left-1/2 -translate-x-1/2 -translate-y-1/3">
-            <img className="w-[25px]" src={badge} alt="badge" />
-            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-[13px] text-primary">
-              {rank}
-            </span>
-          </div>
         </figure>
+        <div className=" absolute left-1/2 -translate-x-1/2 -translate-y-1/3">
+          <img className="w-[25px]" src={badge} alt="badge" />
+          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-[13px] text-primary">
+            {rank}
+          </span>
+        </div>
+      </div> */}
+      <div className="w-20 h-20 mx-auto rounded-2xl relative border-2 border-[#F59F70]">
+        <figure className="h-full w-full p-[3px] rounded-xl relative">
+          <img
+            src={avatar}
+            alt="csGoOne"
+            className="h-full w-full object-cover rounded-xl "
+          />
+          <div className="w-[70px] h-[70px] z-10 border-2 border-[rgba(255,255,255,.22)] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl"></div>
+        </figure>
+        <div className=" absolute z-20 left-1/2 -translate-x-1/2 -translate-y-1/3">
+          <img className="w-[25px]  " src={badge} alt="badge" />
+          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-[13px] text-primary">
+            {rank}
+          </span>
+        </div>
       </div>
       <h2 className="mt-5 font-bold text-base text-light-text">user74793</h2>
       <div className="relative h-[79px] flex items-center justify-center flex-col">
