@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-Inter;
+    @apply font-Inter bg-[#110D1F];
   }
   ::-webkit-scrollbar {
     display: none;

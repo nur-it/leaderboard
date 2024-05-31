@@ -13,11 +13,11 @@ const Header = () => {
             </Link>
           </div>
           <div className=" flex items-center gap-2 font-bold text-11 *:h-[25px] *:rounded-[100px] *:w-[100px] *:flex *:items-center *:justify-center *:gap-1.5 [&_img]:w-3">
-            <Link to={"/"} className="bg-sky-btnBg text-sky-text">
+            <Link to={"/"} className="bg-sky-btnBg/5 ">
               <img src={TwiterIcon} alt="Twitter" />
-              <span>@example</span>
+              <span className="text-sky-text">@example</span>
             </Link>
-            <Link to={"/"} className="bg-lime-btnBg text-lime-text">
+            <Link to={"/"} className="bg-lime-btnBg/5 text-lime-text">
               <img src={KickIcon} alt="KickIcon" />
               <span>example</span>
             </Link>

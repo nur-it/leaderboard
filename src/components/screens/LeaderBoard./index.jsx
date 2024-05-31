@@ -17,12 +17,24 @@ const Leaderboard = () => {
           setSelectedTab={setSelectedTab}
         />
         <div className="flex items-center gap-[21px] *:flex-1 mt-[43px]">
-          <Card avatar={selectedTab === 1 ? avatar_1 : avatar_2} />
+          <Card
+            rank={3}
+            points={selectedTab === 1 ? 300 : 400}
+            avatar={selectedTab === 1 ? avatar_1 : avatar_2}
+          />
           <div>
-            <Card avatar={selectedTab === 1 ? avatar_2 : avatar_3} />
+            <Card
+              rank={1}
+              points={selectedTab === 1 ? 1000 : 1200}
+              avatar={selectedTab === 1 ? avatar_2 : avatar_3}
+            />
             <LeaderBoardTimer />
           </div>
-          <Card avatar={selectedTab === 1 ? avatar_3 : avatar_1} crownWhite />
+          <Card
+            rank={2}
+            points={selectedTab === 1 ? 500 : 700}
+            avatar={selectedTab === 1 ? avatar_3 : avatar_1}
+          />
         </div>
         <Table />
       </div>

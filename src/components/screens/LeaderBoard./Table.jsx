@@ -5,7 +5,7 @@ const Table = () => {
   return (
     <section className="mt-[60px]">
       {/* table header */}
-      <div className="capitalize flex items-center">
+      <div className="capitalize flex items-center font-semibold text-11 text-[#4A445E]">
         <p className="w-[205px]">place</p>
         <p className="w-[412px]">user</p>
         <p className="w-[236px]">Wagered</p>
@@ -27,7 +27,7 @@ const Table = () => {
                 <img
                   src={curItem % 2 === 0 ? avatar_4 : avatar_2}
                   alt="avatar_4"
-                  className="h-6 w-6 rounded-md"
+                  className="border-2 border-primary-card-bg rounded-md"
                 />
               </figure>
               <h4 className="text-[#8F88A8] font-semibold ">user74793</h4>

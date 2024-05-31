@@ -6,6 +6,14 @@ export default {
       fontFamily: {
         Inter: ["Inter", "sans-serif"],
       },
+      backgroundImage: {
+        "ranking-first":
+          "linear-gradient(90deg, #161225 0%, #F19C4D 40.5%, #F19C4D 60.5%, #161225 100%)",
+        "ranking-second":
+          "linear-gradient(90deg, #30255D 0%, #DF8055 40.5%, #DF8055 60.5%, #30255D 100%)",
+        "ranking-third":
+          "linear-gradient(90deg, #161225 0%, #798BB4 40.5%, #798BB4 60.5%, #161225 100%)",
+      },
       container: {
         center: true,
         padding: "1rem",
@@ -30,12 +38,12 @@ export default {
         sky: {
           10: "#08A0E9",
           text: "#1387BF",
-          btnBg: "rgba(8, 160, 233, 0.5)",
+          btnBg: "#08A0E9",
         },
         lime: {
           10: "#00E701",
           text: "#11A912",
-          btnBg: " rgba(0, 231, 1, 0.5)",
+          btnBg: "#00E701",
         },
         light: {
           text: "#CDCCD7",
