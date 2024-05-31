@@ -36,7 +36,7 @@ const Leaderboard = () => {
             avatar={selectedTab === 1 ? avatar_3 : avatar_1}
           />
         </div>
-        <Table />
+        <Table selectedTab={selectedTab} />
       </div>
     </section>
   );
