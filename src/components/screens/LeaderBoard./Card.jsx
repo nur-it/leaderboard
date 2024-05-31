@@ -1,4 +1,5 @@
 import badge from "../../../assets/images/badge.png";
+import badge_white from "../../../assets/images/badge_white.png";
 import point from "../../../assets/images/point.png";
 import crown from "../../../assets/images/crown.png";
 import crown_white from "../../../assets/images/crown_white.png";
@@ -27,7 +28,11 @@ const Card = ({ avatar, rank, points }) => {
           </span>
         </div>
       </div> */}
-      <div className="w-20 h-20 mx-auto rounded-2xl relative border-2 border-[#F59F70]">
+      <div
+        className={`w-20 h-20 mx-auto rounded-2xl relative border-2 ${
+          rank === 2 ? "border-[#98A8D3]" : "border-[#F59F70]"
+        }`}
+      >
         <figure className="h-full w-full p-[3px] rounded-xl relative">
           <img
             src={avatar}
@@ -37,7 +42,11 @@ const Card = ({ avatar, rank, points }) => {
           <div className="w-[70px] h-[70px] z-10 border-2 border-[rgba(255,255,255,.22)] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl"></div>
         </figure>
         <div className=" absolute z-20 left-1/2 -translate-x-1/2 -translate-y-1/3">
-          <img className="w-[25px]  " src={badge} alt="badge" />
+          <img
+            className="w-[25px]  "
+            src={rank === 2 ? badge_white : badge}
+            alt="badge"
+          />
           <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-[13px] text-primary">
             {rank}
           </span>
