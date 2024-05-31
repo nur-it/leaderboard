@@ -4,7 +4,7 @@ import KickIcon from "../../../assets/icons/Kick.svg";
 
 const Header = () => {
   return (
-    <header className="bg-[#161225] h-[64px]">
+    <header className="bg-primary h-[64px]">
       <div className="container h-full">
         <nav className="h-full flex items-center justify-between">
           <div>

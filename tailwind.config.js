@@ -18,6 +18,12 @@ export default {
         11: "11px",
       },
       colors: {
+        primary: {
+          DEFAULT: "#161225",
+          active: "#1B162D",
+          para: "#433D57",
+          bg: "#1C1526",
+        },
         sky: {
           10: "#08A0E9",
           text: "#1387BF",
