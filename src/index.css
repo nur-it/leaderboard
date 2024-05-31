@@ -8,6 +8,9 @@
   body {
     @apply font-Inter;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 @layer utilities {
   .container_fluid {
