@@ -4,28 +4,28 @@ import point from "../../../assets/images/point.png";
 import { leaderboardData } from "../../../data/leaderboard.data";
 const Table = ({ selectedTab }) => {
   return (
-    <section className="mt-[60px]">
+    <section className="mt-[60px]  overflow-auto">
       {/* table header */}
       <div className="capitalize flex items-center font-semibold text-11 text-[#4A445E]">
-        <p className="w-[205px]">place</p>
-        <p className="w-[412px]">user</p>
-        <p className="w-[236px]">Wagered</p>
+        <p className="min-w-[102px] w-[205px]">place</p>
+        <p className="min-w-[200px] w-[412px]">user</p>
+        <p className="min-w-[102px] w-[236px]">Wagered</p>
         <p>Prize</p>
       </div>
-      <ul className="flex flex-col mt-2.5 gap-2.5 font-bold text-sm">
+      <ul className="flex flex-col mt-2.5 gap-2.5 font-bold text-sm  w-full">
         {leaderboardData
           .slice(selectedTab === 1 ? 0 : 2, selectedTab === 1 ? 7 : 9)
           .map((curItem, i) => (
             <li
               key={curItem.id}
-              className="bg-primary-card-bg rounded-lg h-12 flex items-center "
+              className="sm:bg-primary-card-bg *:bg-primary-card-bg sm:*:bg-transparent *:h-full sm:*:h-auto *:flex sm:*:block *:items-center  rounded-lg h-12 flex items-center w-full"
             >
-              <div className="text-[#69698D] h-full w-[205px]">
-                <p className="bg-[#1F1936] rounded-tl-lg rounded-bl-lg h-full flex items-center justify-center w-[115px]">
+              <div className="text-[#69698D] !justify-start min-w-[102px] w-[205px] !h-full">
+                <p className="bg-[#1F1936] rounded-tl-lg rounded-bl-lg h-full flex items-center justify-center w-2/3">
                   #{i + 4}
                 </p>
               </div>
-              <div className="flex items-center gap-3 w-[412px]">
+              <div className="!flex items-center gap-3 min-w-[200px] w-[412px]">
                 <figure className=" border-[2px] border-[#2F2943] rounded-lg w-8 h-8 flex items-center justify-center">
                   <img
                     src={i % 2 === 0 ? avatar_4 : avatar_2}
@@ -37,7 +37,7 @@ const Table = ({ selectedTab }) => {
                   {curItem.User}74793
                 </h4>
               </div>
-              <div className="w-[236px]">
+              <div className="min-w-[102px] w-[236px]">
                 <Point text={curItem.Wagered} />
               </div>
               <div>

@@ -5,7 +5,11 @@ import crown from "../../../assets/images/crown.png";
 import crown_white from "../../../assets/images/crown_white.png";
 const Card = ({ avatar, rank, points }) => {
   return (
-    <div className="bg-primary-card-bg rounded-2xl max-w-[360px] text-center pt-[34px] relative">
+    <div
+      className={`bg-primary-card-bg rounded-2xl max-w-[360px] text-center pt-[34px] relative w-full md:w-auto ${
+        rank !== 1 ? `order-${rank} md:order-[unset]` : ""
+      }`}
+    >
       <div>
         <img
           src={rank === 2 ? crown_white : crown}
