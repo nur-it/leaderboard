@@ -14,7 +14,9 @@ const DateItem = ({ text, title }) => {
 const renderer = ({ days, hours, minutes, seconds }) => {
   // Render a countdown
   return (
-    <ul className="mt-6 flex justify-center items-center gap-2.5 *:rounded-lg *:bg-primary-timer-bg  *:w-[50px] *:h-[53px] *:flex *:items-center *:justify-center *:flex-col *:font-bold [&_h4]:text-light-text [&_h4]:text-base [&_p]:text-primary-timer-text [&_p]:text-11">
+    <ul
+      className={`mt-6 flex justify-center items-center gap-2.5 *:rounded-lg *:bg-primary-timer-bg  *:w-[50px] *:h-[53px] *:flex *:items-center *:justify-center *:flex-col *:font-bold [&_h4]:text-light-text [&_h4]:text-base [&_p]:text-primary-timer-text [&_p]:text-11`}
+    >
       <DateItem text={days} title="days" />
       <DateItem text={hours} title="hrs" />
       <DateItem text={minutes} title="mins" />

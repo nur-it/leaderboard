@@ -16,25 +16,32 @@ const Leaderboard = () => {
           selectedTab={selectedTab}
           setSelectedTab={setSelectedTab}
         />
-        <div className="flex flex-col gap-y-10  md:flex-row items-center md:gap-[21px] *:flex-1 mt-6 md:mt-[43px]">
+        <div className="mt-10 flex flex-col gap-y-10  md:flex-row items-center md:gap-[21px] *:flex-1  md:mt-[43px]">
           <Card
             rank={3}
             points={selectedTab === 1 ? 300 : 400}
             avatar={selectedTab === 1 ? avatar_1 : avatar_2}
           />
-          <div className="w-full md:w-auto flex md:block flex-col-reverse items-center gap-y-10 md:gap-y-0">
+          <div className="w-full md:w-auto  flex flex-col items-center md:block">
             <Card
               rank={1}
               points={selectedTab === 1 ? 1000 : 1200}
               avatar={selectedTab === 1 ? avatar_2 : avatar_3}
             />
-            <LeaderBoardTimer />
+
+            <div className="hidden md:block">
+              <LeaderBoardTimer />
+            </div>
           </div>
           <Card
             rank={2}
             points={selectedTab === 1 ? 500 : 700}
             avatar={selectedTab === 1 ? avatar_3 : avatar_1}
           />
+        </div>
+
+        <div className="block md:hidden">
+          <LeaderBoardTimer />
         </div>
         <Table selectedTab={selectedTab} />
       </div>
