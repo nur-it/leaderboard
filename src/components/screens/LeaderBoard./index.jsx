@@ -18,11 +18,11 @@ const Leaderboard = () => {
         />
         <div className="mt-10 flex flex-col gap-y-10  md:flex-row items-center md:gap-[21px] *:flex-1  md:mt-[43px]">
           <Card
-            rank={3}
-            points={selectedTab === 1 ? 300 : 400}
+            rank={2}
+            points={selectedTab === 1 ? 600 : 700}
             avatar={selectedTab === 1 ? avatar_1 : avatar_2}
           />
-          <div className="w-full flex flex-col items-center ">
+          <div className="order-1 md:order-[unset] w-full flex flex-col items-center ">
             <Card
               rank={1}
               points={selectedTab === 1 ? 1000 : 1200}
@@ -34,8 +34,8 @@ const Leaderboard = () => {
             </div>
           </div>
           <Card
-            rank={2}
-            points={selectedTab === 1 ? 500 : 700}
+            rank={3}
+            points={selectedTab === 1 ? 300 : 400}
             avatar={selectedTab === 1 ? avatar_3 : avatar_1}
           />
         </div>
