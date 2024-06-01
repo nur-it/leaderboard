@@ -22,7 +22,7 @@ const Leaderboard = () => {
             points={selectedTab === 1 ? 300 : 400}
             avatar={selectedTab === 1 ? avatar_1 : avatar_2}
           />
-          <div className="w-full md:w-auto  flex flex-col items-center md:block">
+          <div className="w-full flex flex-col items-center ">
             <Card
               rank={1}
               points={selectedTab === 1 ? 1000 : 1200}
