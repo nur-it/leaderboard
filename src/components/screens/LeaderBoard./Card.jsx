@@ -1,8 +1,12 @@
 import badge from "../../../assets/images/badge.png";
+import badgeGold from "../../../assets/images/badge-gold.png";
+import badge from "../../../assets/images/badge.png";
 import badge_white from "../../../assets/images/badge_white.png";
 import point from "../../../assets/images/point.png";
 import crown from "../../../assets/images/crown.png";
+import bronzeCrown from "../../../assets/images/bronze-crown.png";
 import crown_white from "../../../assets/images/crown_white.png";
+
 const Card = ({ avatar, rank, points }) => {
   return (
     <div
@@ -12,7 +16,7 @@ const Card = ({ avatar, rank, points }) => {
     >
       <div>
         <img
-          src={rank === 3 ? crown_white : crown}
+          src={rank === 3 ? crown_white : rank === 2 ? bronzeCrown : crown}
           alt="crown"
           className="w-12 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2/3"
         />
@@ -20,7 +24,7 @@ const Card = ({ avatar, rank, points }) => {
 
       <div
         className={`w-20 h-20 mx-auto rounded-2xl relative border-2 ${
-          rank === 3 ? "border-[#98A8D3]" : "border-[#F59F70]"
+          rank === 3 ? "border-[#98A8D3]" : rank === 2 ? "border-[#D27047]" :"border-[#F59F70]"
         }`}
       >
         <figure className="h-full w-full p-[3px] rounded-xl relative">
@@ -33,8 +37,8 @@ const Card = ({ avatar, rank, points }) => {
         </figure>
         <div className=" absolute z-20 left-1/2 -translate-x-1/2 -translate-y-1/3">
           <img
-            className="w-[25px]  "
-            src={rank === 3 ? badge_white : badge}
+            className="w-[25px]"
+            src={rank === 3 ? badge_white : rank === 2 ? badge : badgeGold}
             alt="badge"
           />
           <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-[13px] text-primary">
