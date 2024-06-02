@@ -1,10 +1,9 @@
 import badge from "../../../assets/images/badge.png";
-import badgeGold from "../../../assets/images/badge-gold.png";
-import badge from "../../../assets/images/badge.png";
+import badgeGold from "../../../assets/images/badge_gold.png";
 import badge_white from "../../../assets/images/badge_white.png";
 import point from "../../../assets/images/point.png";
 import crown from "../../../assets/images/crown.png";
-import bronzeCrown from "../../../assets/images/bronze-crown.png";
+import bronzeCrown from "../../../assets/images/bronze_crown.png";
 import crown_white from "../../../assets/images/crown_white.png";
 
 const Card = ({ avatar, rank, points }) => {

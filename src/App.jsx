@@ -1,4 +1,4 @@
-import Leaderboard from "./components/screens/LeaderBoard.";
+import Leaderboard from "./components/screens/LeaderBoard";
 import Header from "./components/shared/Header";
 
 const App = () => {
